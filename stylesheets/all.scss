@@ -1,0 +1,48 @@
+/*!
+ * Bootstrap v4.6.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+ @import "functions";
+ @import "variables";
+ @import "mixins";
+ @import "root";
+ @import "reboot";
+ @import "type";
+ @import "images";
+ @import "code";
+ @import "grid";
+ @import "forms";
+ @import "buttons";
+ @import "transitions";
+ @import "dropdown";
+ @import "input-group";
+ @import "custom-forms";
+ @import "nav";
+ @import "navbar";
+ @import "card";
+ @import "list-group";
+ @import "close";
+ @import "modal";
+ @import "tooltip";
+ @import "carousel";
+ @import "utilities";
+ 
+//  區塊內容
+@import "./component/header";
+@import "./component/footer";
+
+// 元件
+@import "./component/introBlock";
+@import "./component/linkCard";
+@import "./component/sub";
+@import "./component/productTheme";
+@import "./component/productCard";
+@import "./component/cartList";
+@import "./component/processBar";
+
+a:hover{
+  text-decoration: none;
+}

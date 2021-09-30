@@ -1,0 +1,65 @@
+.processBar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $primary-200;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+
+.processBar.complete::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: $primary;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.processBar.stepHalf::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  background-color: $primary;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.processBar-step{
+  background-color: $primary-100;
+  border: 2px solid $primary-200;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.processBar-step.active{
+  border: 2px solid $primary;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $primary;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+  }
+}

@@ -1,0 +1,14 @@
+.footer-infor-slogan{
+  line-height: 1.5;
+  letter-spacing: 5px;
+  position: relative;
+  &::after{
+    content: '';
+    width: 2px;
+    height: 25%;
+    background-color: $secondary;
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+  }
+}

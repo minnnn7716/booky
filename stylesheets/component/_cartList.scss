@@ -1,0 +1,23 @@
+.cartList-img-sm{
+  max-width: 80px;
+}
+
+.cartList-img{
+  max-width: 120px;
+  @media (max-width: 720px){
+    max-width: 200px;
+  }
+}
+
+.cartList-inputGroup{
+  width: 120px;
+  input{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  button{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

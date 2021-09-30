@@ -1,0 +1,20 @@
+.card-hide{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: $white;
+  z-index: 200;
+  visibility: hidden;
+}
+
+.card{
+  transition: all ease .2s;
+  &:hover>.card-hide{
+    visibility: visible;
+    box-shadow: 3px 3px 8px rgba($color: #000000, $alpha: 0.15);
+  }
+  &:hover{
+    box-shadow: 3px 3px 8px rgba($color: #000000, $alpha: 0.15);
+  }
+}
+ 

@@ -1,0 +1,32 @@
+.introBlock-Over{
+  margin-top: -30px;
+  margin-bottom: -30px;
+  
+  @media(max-width: 767px){
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.introBlock-title{
+  line-height: 1.5;
+  letter-spacing: 3px;
+  position: relative;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    width: 100px;
+    height: 1px;
+    background-color: $secondary;
+    @media(max-width: 768px){
+      content: none;
+    }
+  }
+}
+
+.introBlock-image{
+  min-height: 250px;
+}

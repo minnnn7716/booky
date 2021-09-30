@@ -1,0 +1,7 @@
+.linkCard-hover-image{
+  background-size: 100%;
+  transition: background-size ease 1s;
+  &:hover{
+    background-size: 110%;
+  }
+}
